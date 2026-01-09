@@ -30,6 +30,7 @@ To support skill validation, the platform includes mock tests and practice asses
 2. cd Sensai---A-AI-career-coach
 3. npm install
 4. Create a `.env` file and add:
+
     ```env
     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
     CLERK_SECRET_KEY
