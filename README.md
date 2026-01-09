@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SENSAI - A AI career coach
+This website is designed to help candidates build structured, role-aligned resumes and prepare effectively for industry-specific roles using AI-assisted analysis and assessment tools.
+The resume builder enables users to create and refine resumes with standardized formatting and role-relevant content. AI assistance is used to improve bullet points by emphasizing measurable outcomes, relevant skills, and industry-accepted terminology, making resumes easier to evaluate during shortlisting.
 
-## Getting Started
+The platform also provides industry insights based on the user’s selected domain, including:
+1. Commonly available job roles and role expectations
+2. Minimum and maximum salary ranges for each role
+3. Current demand trends across experience levels
 
-First, run the development server:
+These insights help candidates align their profiles with realistic market requirements before applying.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+To support skill validation, the platform includes mock tests and practice assessments tailored to specific roles and domains. These assessments help users identify knowledge gaps and improve technical and analytical readiness, resulting in candidates who are better prepared for interviews and evaluations.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+1. User authenication using clerk
+2. Responsive UI
+3. Gemini generated mock test based on industry and skills of the user
+4. Visual representation of mock test scores using graphical analysis.
+5. Building resume and improving points using ai asistance.
+6. Real-time HTML to Markdown conversion feature.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Tech Stack
+- Frontend: React, Tailwind CSS
+- Backend: Node.js
+- Database: Prisma
+- Authentication: Clerk
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
+1. Clone the repository - https://github.com/KhushiSahu0108/Sensai---A-AI-career-coach
+2. cd Sensai---A-AI-career-coach
+3. npm install
+4. Create a `.env` file and add:
 
-## Learn More
+    ```env
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+    CLERK_SECRET_KEY
+    NEXT_PUBLIC_CLERK_SIGN_IN_URL = /sign-in
+    NEXT_PUBLIC_CLERK_SIGN_UP_URL = /sign-up
+    NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL = /onboarding
+    NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL = /onboarding
+    DATABASE_URL
+    GEMINI_API_KEY
 
-To learn more about Next.js, take a look at the following resources:
+5. npm run dev
+6. Usage
+Explain how to use the app.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```md
+    ## Usage
+    1. Sign up or log in
+    2. Enter your details
+    3. Generate and download your resume
